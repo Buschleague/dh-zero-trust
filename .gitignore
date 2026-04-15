@@ -1,0 +1,34 @@
+.venv/
+__pycache__/
+*.pyc
+agent_pack.tgz
+*.bak
+config/.env
+reports/*.json
+reports/*.md
+.idea
+
+
+# PairCoder — ephemeral/session data
+.paircoder/data/
+.paircoder/history/
+.paircoder/cache/
+.paircoder/.cli_version
+.paircoder/telemetry/telemetry.jsonl
+.paircoder/telemetry/signals.jsonl
+.paircoder/telemetry/heartbeat
+.paircoder/telemetry/audit.jsonl
+.paircoder/telemetry/session_snapshot.json
+.paircoder/feedback/calibration.json
+
+# >>> paircoder managed
+.paircoder/.cli_version
+.paircoder/cache/**
+.paircoder/feedback/calibration.json
+.paircoder/telemetry/**
+# <<< paircoder managed
+/.claude/
+/.paircoder/
+/CLAUDE.md
+/.agentpackignore
+/.editorconfig
