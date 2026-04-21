@@ -4,6 +4,7 @@ __pycache__/
 agent_pack.tgz
 *.bak
 config/.env
+config/.scc_tokens.json
 reports/*.json
 reports/*.md
 .idea

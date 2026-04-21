@@ -1,3 +1,5 @@
 duo_client>=5.6.1
+httpx>=0.28.0
 python-dotenv>=1.0.0
+pytest>=8.0
 rich>=13.0.0

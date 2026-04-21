@@ -1,0 +1,440 @@
+{
+  "sites": {
+    "_response_type": "list",
+    "data": [
+      {
+        "originId": 638258009,
+        "isDefault": false,
+        "name": "Acuna",
+        "modifiedAt": "2024-10-07T14:54:36.000Z",
+        "createdAt": "2024-10-07T14:54:36.000Z",
+        "type": "site",
+        "internalNetworkCount": 1,
+        "vaCount": 0,
+        "siteId": 6650736
+      },
+      {
+        "originId": 147922652,
+        "isDefault": false,
+        "name": "Brownwood",
+        "modifiedAt": "2018-05-02T14:56:54.000Z",
+        "createdAt": "2018-05-02T14:56:54.000Z",
+        "type": "site",
+        "internalNetworkCount": 2,
+        "vaCount": 0,
+        "siteId": 662480
+      },
+      {
+        "originId": 638258117,
+        "isDefault": false,
+        "name": "Brownwood Burney",
+        "modifiedAt": "2024-10-07T14:55:49.000Z",
+        "createdAt": "2024-10-07T14:55:49.000Z",
+        "type": "site",
+        "internalNetworkCount": 2,
+        "vaCount": 0,
+        "siteId": 6650745
+      }
+    ],
+    "total": 15
+  },
+  "roaming_computers": {
+    "_response_type": "list",
+    "data": [
+      {
+        "originId": 147626384,
+        "deviceId": "01010d27919c6fdc",
+        "type": "anyconnect",
+        "status": "Off",
+        "lastSyncStatus": "Off",
+        "lastSync": "2026-03-04T13:57:49.000Z",
+        "version": "5.1.14.145",
+        "name": "dhbwd-terryl",
+        "hasIpBlocking": false,
+        "appliedBundle": 0,
+        "osVersion": "Microsoft Windows NT 10.0.19045.0",
+        "osVersionName": "Windows 10",
+        "anyconnectDeviceId": "8d10836ff919599c9444a4969952e22c4daa4e15",
+        "swgStatus": "Off",
+        "lastSyncSwgStatus": "Protected"
+      },
+      {
+        "originId": 668150492,
+        "deviceId": "01012e006be29f56",
+        "type": "anyconnect",
+        "status": "Off",
+        "lastSyncStatus": "VA",
+        "lastSync": "2026-03-23T13:11:30.000Z",
+        "version": "5.1.14.145",
+        "name": "DHI-f7qylWALv9d",
+        "hasIpBlocking": false,
+        "appliedBundle": 0,
+        "osVersion": "Microsoft Windows NT 10.0.26200.0",
+        "osVersionName": "Windows 11",
+        "anyconnectDeviceId": "237e6a53a2b4047d01d76165a727397a60b5a779",
+        "swgStatus": "Off",
+        "lastSyncSwgStatus": "Protected"
+      },
+      {
+        "originId": 668150985,
+        "deviceId": "0101ba4c6ad323d2",
+        "type": "anyconnect",
+        "status": "Off",
+        "lastSyncStatus": "Encrypted",
+        "lastSync": "2026-02-23T18:08:46.000Z",
+        "version": "5.1.14.145",
+        "name": "DESKTOP-IH260PJ",
+        "hasIpBlocking": false,
+        "appliedBundle": 952824,
+        "osVersion": "Microsoft Windows NT 10.0.26200.0",
+        "osVersionName": "Windows 11",
+        "anyconnectDeviceId": "f8b0028f61c331d4f4ad8f20bb132a1cb0cd63ed",
+        "swgStatus": "Off",
+        "lastSyncSwgStatus": "NA"
+      }
+    ],
+    "total": 100
+  },
+  "tunnel_groups": {
+    "_response_type": "wrapped",
+    "data": [
+      {
+        "id": 667562129,
+        "organizationId": 2443072,
+        "name": "DH Tunnel",
+        "region": "us-east-2",
+        "deviceType": "Meraki MX",
+        "routing": {
+          "type": "static",
+          "data": {
+            "enableIPv6": true,
+            "networkCIDRs": [
+              "192.168.3.11/32",
+              "192.168.3.12/32",
+              "192.168.1.2/32",
+              "172.25.4.3/32",
+              "10.0.2.5/32",
+              "192.168.3.44/32",
+              "192.168.3.3/32",
+              "192.0.2.3/32"
+            ]
+          }
+        },
+        "status": "warning",
+        "hubs": [
+          {
+            "id": 667562130,
+            "authId": "DanHilTunnel@2443072-667562130-sse.cisco.com",
+            "isPrimary": true,
+            "datacenter": {
+              "name": "sse-use-2-1-0"
+            },
+            "status": {
+              "status": "UP",
+              "time": "2026-04-21T22:27:37Z"
+            },
+            "tunnelsCount": 4,
+            "createdAt": "2026-02-12T17:53:39Z",
+            "modifiedAt": "2026-02-12T17:53:39Z"
+          },
+          {
+            "id": 667562131,
+            "authId": "DanHilTunnel@2443072-667562131-sse.cisco.com",
+            "isPrimary": false,
+            "datacenter": {
+              "name": "sse-use-2-1-1"
+            },
+            "status": {
+              "status": "UP",
+              "time": "2026-04-21T22:29:04Z"
+            },
+            "tunnelsCount": 2,
+            "createdAt": "2026-02-12T17:53:39Z",
+            "modifiedAt": "2026-02-12T17:53:39Z"
+          }
+        ],
+        "createdAt": "2026-02-12T17:53:39Z",
+        "modifiedAt": "2026-04-21T15:23:32Z"
+      }
+    ],
+    "offset": 0,
+    "limit": 10,
+    "total": 1
+  },
+  "internal_networks": {
+    "_response_type": "list",
+    "data": [
+      {
+        "originId": 149984706,
+        "ipAddress": "192.168.3.0",
+        "prefixLength": 24,
+        "siteName": "Brownwood",
+        "createdAt": "2018-05-14T16:19:27.000Z",
+        "modifiedAt": "2018-05-14T16:19:27.000Z",
+        "name": "DH Brownwood",
+        "siteId": 662480
+      },
+      {
+        "originId": 149984812,
+        "ipAddress": "172.25.4.0",
+        "prefixLength": 24,
+        "siteName": "San Angelo",
+        "createdAt": "2018-05-14T16:20:03.000Z",
+        "modifiedAt": "2024-10-07T14:58:18.000Z",
+        "name": "DH San Angelo",
+        "siteId": 662482
+      },
+      {
+        "originId": 149984872,
+        "ipAddress": "192.168.6.0",
+        "prefixLength": 24,
+        "siteName": "Brownwood Burney",
+        "createdAt": "2018-05-14T16:20:35.000Z",
+        "modifiedAt": "2024-10-07T14:57:59.000Z",
+        "name": "DH Brownwood Packaging",
+        "siteId": 6650745
+      }
+    ],
+    "total": 26
+  },
+  "internal_domains": {
+    "_response_type": "list",
+    "data": [
+      {
+        "id": 966882,
+        "domain": "budgetbox.com",
+        "description": "",
+        "createdAt": "2021-10-14T14:40:30.000Z",
+        "modifiedAt": "2021-10-14T14:40:30.000Z",
+        "includeAllVAs": true,
+        "includeAllMobileDevices": true,
+        "siteIds": []
+      },
+      {
+        "id": 403976,
+        "domain": "danhilcontainers.com",
+        "description": "DanHil Network",
+        "createdAt": "2018-04-29T16:10:36.000Z",
+        "modifiedAt": "2018-04-29T16:10:36.000Z",
+        "includeAllVAs": true,
+        "includeAllMobileDevices": true,
+        "siteIds": []
+      },
+      {
+        "id": 3821497,
+        "domain": "paylocity.com",
+        "description": "",
+        "createdAt": "2026-03-10T15:06:17.000Z",
+        "modifiedAt": "2026-03-10T15:06:17.000Z",
+        "includeAllVAs": true,
+        "includeAllMobileDevices": true,
+        "siteIds": []
+      }
+    ],
+    "total": 3
+  },
+  "destination_lists": {
+    "_response_type": "wrapped",
+    "status": {
+      "code": 200,
+      "text": "OK"
+    },
+    "meta": {
+      "page": 1,
+      "limit": 25,
+      "total": 9
+    },
+    "data": [
+      {
+        "id": 2308432,
+        "organizationId": 2443072,
+        "access": "allow",
+        "isGlobal": true,
+        "name": "Global Allow List",
+        "thirdpartyCategoryId": null,
+        "createdAt": 1525017323,
+        "modifiedAt": 1775226046,
+        "isMspDefault": false,
+        "markedForDeletion": false,
+        "bundleTypeId": 1,
+        "meta": {
+          "domainCount": 57,
+          "urlCount": 0,
+          "ipv4Count": 0,
+          "applicationCount": 0,
+          "ipv6Count": 0,
+          "destinationCount": 57
+        }
+      },
+      {
+        "id": 2308434,
+        "organizationId": 2443072,
+        "access": "block",
+        "isGlobal": true,
+        "name": "Global Block List",
+        "thirdpartyCategoryId": null,
+        "createdAt": 1525017323,
+        "modifiedAt": 1525017323,
+        "isMspDefault": false,
+        "markedForDeletion": false,
+        "bundleTypeId": 1,
+        "meta": {
+          "domainCount": 0,
+          "urlCount": 0,
+          "ipv4Count": 0,
+          "applicationCount": 0,
+          "ipv6Count": 0,
+          "destinationCount": 0
+        }
+      },
+      {
+        "id": 2814286,
+        "organizationId": 2443072,
+        "access": "allow",
+        "isGlobal": false,
+        "name": "test list",
+        "thirdpartyCategoryId": null,
+        "createdAt": 1544646150,
+        "modifiedAt": 1544646150,
+        "isMspDefault": false,
+        "markedForDeletion": false,
+        "bundleTypeId": 1,
+        "meta": {
+          "domainCount": 1,
+          "urlCount": 0,
+          "ipv4Count": 0,
+          "applicationCount": 0,
+          "ipv6Count": 0,
+          "destinationCount": 1
+        }
+      }
+    ]
+  },
+  "categories": {
+    "_response_type": "list",
+    "data": [
+      {
+        "categoryId": 72,
+        "name": "Academic Fraud",
+        "description": "Sites that promote educational fraud, including but not limited to plagiarism and cheating.",
+        "blockGroup": null,
+        "bitfieldPosition": 47,
+        "enabled": "y",
+        "inheritable": "n",
+        "opaque": "n",
+        "readOnly": "n",
+        "decideMinPercent": 70,
+        "decideMinVotes": 5,
+        "websiteRequired": "y",
+        "createdAt": 1261077546,
+        "modifiedAt": 1261077493,
+        "categoryTypeId": 1,
+        "displayLabel": "Academic Fraud",
+        "displayLabelMachine": "Academic Fraud",
+        "reportingEnabled": 1,
+        "masked": 0
+      },
+      {
+        "categoryId": 415,
+        "name": "Adult",
+        "description": "",
+        "blockGroup": "",
+        "bitfieldPosition": 161,
+        "enabled": "y",
+        "inheritable": "n",
+        "opaque": "y",
+        "readOnly": "y",
+        "decideMinPercent": 70,
+        "decideMinVotes": 20,
+        "websiteRequired": "y",
+        "createdAt": null,
+        "modifiedAt": null,
+        "categoryTypeId": 1,
+        "displayLabel": "Adult",
+        "displayLabelMachine": "Adult",
+        "reportingEnabled": 1,
+        "masked": 1
+      },
+      {
+        "categoryId": 58,
+        "name": "Adult Themes",
+        "description": "Sites that are adult in nature and are not defined in other rating categories. Note: This category should only be turned on if you want to be very restrictive on your network.",
+        "blockGroup": "adult",
+        "bitfieldPosition": 40,
+        "enabled": "y",
+        "inheritable": "n",
+        "opaque": "n",
+        "readOnly": "n",
+        "decideMinPercent": 60,
+        "decideMinVotes": 3,
+        "websiteRequired": "y",
+        "createdAt": 1204910084,
+        "modifiedAt": 1204910084,
+        "categoryTypeId": 1,
+        "displayLabel": "Adult Themes",
+        "displayLabelMachine": "Adult Themes",
+        "reportingEnabled": 1,
+        "masked": 0
+      }
+    ],
+    "total": 211
+  },
+  "users": {
+    "_response_type": "list",
+    "data": [
+      {
+        "firstname": "Blake",
+        "lastname": "Bratu",
+        "email": "bbratu@cisco.com",
+        "role": "Read Only",
+        "roleId": 2,
+        "status": "Active",
+        "twoFactorEnable": false,
+        "id": 12537028,
+        "timezone": "UTC",
+        "lastLoginTime": "2026-04-21T15:24:34.000Z"
+      },
+      {
+        "firstname": "Casey",
+        "lastname": "McDaniel",
+        "email": "Caseym@danhilcontainers.com",
+        "role": "Full Admin",
+        "roleId": 1,
+        "status": "Active",
+        "twoFactorEnable": false,
+        "id": 9931216,
+        "timezone": "America/Atikokan",
+        "lastLoginTime": "2026-03-04T15:04:43.000Z"
+      },
+      {
+        "firstname": "Danny",
+        "lastname": "Varela",
+        "email": "dannyv@danhilcontainers.com",
+        "role": "Read Only",
+        "roleId": 2,
+        "status": "Active",
+        "twoFactorEnable": false,
+        "id": 12607442,
+        "timezone": "UTC",
+        "lastLoginTime": "2024-10-09T14:39:06.000Z"
+      }
+    ],
+    "total": 4
+  },
+  "roles": {
+    "_response_type": "list",
+    "data": [
+      {
+        "organizationId": 0,
+        "label": "Full Admin",
+        "roleId": 1
+      },
+      {
+        "organizationId": 0,
+        "label": "Read Only",
+        "roleId": 2
+      }
+    ],
+    "total": 2
+  }
+}

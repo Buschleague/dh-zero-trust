@@ -1,0 +1,154 @@
+{
+  "working_endpoints": {
+    "deployments": {
+      "/deployments/v2/sites": {
+        "response_type": "list",
+        "count": 15,
+        "key_fields": [
+          "originId",
+          "name",
+          "type",
+          "siteId",
+          "internalNetworkCount",
+          "vaCount"
+        ]
+      },
+      "/deployments/v2/roamingcomputers": {
+        "response_type": "list",
+        "count": 100,
+        "paginated": true,
+        "key_fields": [
+          "originId",
+          "deviceId",
+          "type",
+          "status",
+          "name",
+          "osVersionName",
+          "version"
+        ]
+      },
+      "/deployments/v2/networktunnelgroups": {
+        "response_type": "wrapped",
+        "count": 1,
+        "key_fields": [
+          "id",
+          "name",
+          "region",
+          "deviceType",
+          "routing"
+        ]
+      },
+      "/deployments/v2/internalnetworks": {
+        "response_type": "list",
+        "count": 26,
+        "key_fields": [
+          "originId",
+          "ipAddress",
+          "prefixLength",
+          "siteName",
+          "name",
+          "siteId"
+        ]
+      },
+      "/deployments/v2/internaldomains": {
+        "response_type": "list",
+        "count": 3,
+        "key_fields": [
+          "id",
+          "domain",
+          "includeAllVAs",
+          "includeAllMobileDevices"
+        ]
+      }
+    },
+    "policies": {
+      "/policies/v2/destinationlists": {
+        "response_type": "wrapped",
+        "count": 9,
+        "key_fields": [
+          "id",
+          "access",
+          "name",
+          "isGlobal",
+          "meta"
+        ]
+      },
+      "/policies/v2/categories": {
+        "response_type": "list",
+        "count": 211,
+        "key_fields": [
+          "categoryId",
+          "name",
+          "description",
+          "enabled"
+        ]
+      }
+    },
+    "admin": {
+      "/admin/v2/users": {
+        "response_type": "list",
+        "count": 4,
+        "key_fields": [
+          "firstname",
+          "lastname",
+          "email",
+          "role",
+          "status",
+          "twoFactorEnable"
+        ]
+      },
+      "/admin/v2/roles": {
+        "response_type": "list",
+        "count": 2,
+        "key_fields": [
+          "label",
+          "roleId"
+        ]
+      },
+      "/admin/v2/integrations": {
+        "response_type": "wrapped",
+        "count": 0,
+        "key_fields": [
+          "total",
+          "data"
+        ]
+      }
+    },
+    "reports": {
+      "/reports/v2/activity": {
+        "response_type": "wrapped",
+        "params": "from (epoch_ms), to (epoch_ms), limit",
+        "note": "Returns DNS/proxy/firewall activity"
+      },
+      "/reports/v2/top-destinations": {
+        "response_type": "wrapped",
+        "params": "from (epoch_ms), to (epoch_ms), offset, limit",
+        "note": "Top destinations by request count"
+      },
+      "/reports/v2/summary": {
+        "response_type": "wrapped",
+        "params": "from (epoch_ms), to (epoch_ms)",
+        "note": "Summary stats"
+      }
+    }
+  },
+  "not_found_404": [
+    "/admin/v2/apikeys",
+    "/admin/v2/identityproviders",
+    "/policies/v2/accessrules",
+    "/policies/v2/privateresources",
+    "/policies/v2/internetfirewall",
+    "/policies/v2/applicationlists",
+    "/policies/v2/securityprofiles",
+    "/policies/v2/rulesets",
+    "/deployments/v2/connectorgroups",
+    "/deployments/v2/pacs"
+  ],
+  "notes": {
+    "auth": "client_credentials grant with KEY_ID:ACCESS_TOKEN as Basic auth",
+    "token_url": "https://api.sse.cisco.com/auth/v2/token",
+    "base_url": "https://api.sse.cisco.com",
+    "reports_timestamps": "epoch milliseconds, not ISO 8601",
+    "roaming_computers_pagination": "returns 100 per page, needs pagination for full list"
+  }
+}

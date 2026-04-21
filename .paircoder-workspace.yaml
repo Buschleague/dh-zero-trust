@@ -1,0 +1,5 @@
+name: dh-zero-trust
+projects:
+  dh-zero-trust:
+    path: .
+    branch: main
